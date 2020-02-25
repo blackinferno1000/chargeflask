@@ -6,7 +6,7 @@ services:
     container_name: postgres
     restart: always
     volumes:
-      - /chargeflaskdata/postgres-data:/var/lib/postgresql/data
+      - /chargeflaskdata/postgres-data:/var/lib/postgresql/d
     expose:
       - "5432"
     environment:
@@ -22,7 +22,7 @@ services:
     container_name: redis
     restart: always
     volumes:
-      - /chargeflaskdata/redis-data:/data
+      - /chargeflaskdata/redis-data:/d
     expose:
       - "6379"
 
